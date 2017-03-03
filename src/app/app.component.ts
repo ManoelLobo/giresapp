@@ -4,7 +4,7 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { HomePage } from '../pages/home/home';
 import { NotificationPage} from '../pages/notification/notification';
-
+import { CreditsPage } from '../pages/credits/credits';
 
 @Component({
     templateUrl: 'app.html'
@@ -21,7 +21,8 @@ export class MyApp {
 
         this.pages = [
             {title: "Home", component: HomePage},
-            {title: "Notificações", component: NotificationPage}
+            {title: "Notificações", component: NotificationPage},
+            {title: "Créditos", component: CreditsPage}
         ];
     }
 
