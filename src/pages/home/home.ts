@@ -6,6 +6,7 @@ import { ModalReciclaveisPage } from '../modal-reciclaveis/modal-reciclaveis';
 import { ModalOrganicosPage } from '../modal-organicos/modal-organicos';
 import { ModalRejeitosPage } from './../modal-rejeitos/modal-rejeitos';
 import { ModalOutrosPage } from './../modal-outros/modal-outros';
+import { ModalSobreGGEAPage } from './../modal-sobre-ggea/modal-sobre-ggea';
 
 @Component({
     selector: 'page-home',
@@ -16,11 +17,12 @@ export class HomePage {
 
     constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
         this.modals = [
-            {title: "separar", component: ModalSepararPage},
-            {title: "reciclaveis", component: ModalReciclaveisPage },
-            {title: "organicos", component: ModalOrganicosPage },
-            {title: "rejeitos", component: ModalRejeitosPage },
-            {title: "outros", component: ModalOutrosPage }
+            { title: "separar", component: ModalSepararPage },
+            { title: "reciclaveis", component: ModalReciclaveisPage },
+            { title: "organicos", component: ModalOrganicosPage },
+            { title: "rejeitos", component: ModalRejeitosPage },
+            { title: "outros", component: ModalOutrosPage },
+            { title: "ggea", component: ModalSobreGGEAPage}
         ];
     }
 

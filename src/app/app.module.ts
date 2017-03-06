@@ -11,6 +11,7 @@ import { ModalReciclaveisPage } from './../pages/modal-reciclaveis/modal-recicla
 import { ModalOrganicosPage } from './../pages/modal-organicos/modal-organicos';
 import { ModalRejeitosPage } from './../pages/modal-rejeitos/modal-rejeitos';
 import { ModalOutrosPage } from './../pages/modal-outros/modal-outros';
+import { ModalSobreGGEAPage } from './../pages/modal-sobre-ggea/modal-sobre-ggea'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ModalOutrosPage } from './../pages/modal-outros/modal-outros';
     ModalReciclaveisPage,
     ModalOrganicosPage,
     ModalRejeitosPage,
-    ModalOutrosPage
+    ModalOutrosPage,
+    ModalSobreGGEAPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -37,7 +39,8 @@ import { ModalOutrosPage } from './../pages/modal-outros/modal-outros';
     ModalReciclaveisPage,
     ModalOrganicosPage,
     ModalRejeitosPage,
-    ModalOutrosPage
+    ModalOutrosPage,
+    ModalSobreGGEAPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
