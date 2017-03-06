@@ -1,10 +1,10 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
+    <ion-navbar>
+        <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Notificação de coleta</ion-title>
-  </ion-navbar>
+        <ion-title>Notificação de coleta</ion-title>
+    </ion-navbar>
 </ion-header>
 
 
@@ -12,9 +12,16 @@
 
     <ion-list no-lines>
 
+        <ion-item><b>Coleta seletiva</b></ion-item>
         <ion-item>
-          <ion-label>Avisar sobre a coleta seletiva em: </ion-label>
-          <ion-datetime displayFormat="HH:mm" pickerFormat="HH mm" [(ngModel)]="notifyTime" (ionChange)="timeChange($event)"></ion-datetime>
+            <ion-label>Avisar às:</ion-label>
+            <ion-datetime
+                displayFormat="HH:mm"
+                pickerFormat="HH mm"
+                [(ngModel)]="notifyTime"
+                (ionChange)="timeChange($event)"
+                cancelText="Cancelar"
+                doneText="Ok"></ion-datetime>
         </ion-item>
 
         <ion-item>
