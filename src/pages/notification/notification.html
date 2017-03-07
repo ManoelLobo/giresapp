@@ -7,12 +7,10 @@
     </ion-navbar>
 </ion-header>
 
-
 <ion-content>
-
     <ion-list no-lines>
-
         <ion-item><b>Coleta seletiva</b></ion-item>
+
         <ion-item>
             <ion-label>Avisar às:</ion-label>
             <ion-datetime
@@ -32,14 +30,10 @@
             <ion-label>{{day.title}}</ion-label>
             <ion-checkbox [(ngModel)]="day.checked" color="primary"></ion-checkbox>
         </ion-item>
-
     </ion-list>
-
 </ion-content>
 
 <ion-footer>
-
     <button (click)="addNotifications()" ion-button color="primary" full>Agendar notificação</button>
     <button (click)="cancelAll()" ion-button color="danger" full>Cancelar notificação</button>
-
 </ion-footer>

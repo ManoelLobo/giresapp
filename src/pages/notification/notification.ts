@@ -8,7 +8,6 @@ import * as moment from 'moment';
     templateUrl: 'notification.html'
 })
 export class NotificationPage {
-
     notifyTime: any;
     notifications: any[] = [];
     days: any[];
@@ -16,7 +15,6 @@ export class NotificationPage {
     chosenMinutes: number;
 
     constructor(public navCtrl: NavController, public platform: Platform, public alertCtrl: AlertController) {
-
         this.notifyTime = moment(new Date()).format();
 
         this.chosenHours = new Date().getHours();
@@ -31,12 +29,9 @@ export class NotificationPage {
             { title: 'Sexta', dayCode: 5, checked: false },
             { title: 'Sábado', dayCode: 6, checked: false }
         ];
-
     }
 
-    ionViewDidLoad() {
-
-    }
+    ionViewDidLoad() {}
 
     timeChange(time){
         this.chosenHours = time.hour.value;
@@ -46,23 +41,21 @@ export class NotificationPage {
     addNotifications() {
         let currentDate = new Date();
         let currentDay = currentDate.getDay(); // Sunday = 0, Monday = 1, etc.
-    
+
         for(let day of this.days){
-    
             if(day.checked){
-    
                 let firstNotificationTime = new Date();
                 let dayDifference = day.dayCode - currentDay;
-    
+
                 if(dayDifference < 0){
                     dayDifference = dayDifference + 7; // for cases where the day is in the following week
                 }
-    
+
                 firstNotificationTime.setHours(firstNotificationTime.getHours() + (24 * (dayDifference)));
                 firstNotificationTime.setHours(this.chosenHours);
                 firstNotificationTime.setMinutes(this.chosenMinutes);
                 firstNotificationTime.setSeconds(0);
-    
+
                 let notification = {
                     id: day.dayCode,
                     title: 'Coleta de recicláveis',
@@ -70,34 +63,28 @@ export class NotificationPage {
                     at: firstNotificationTime,
                     every: 'week'
                 };
-    
+
                 this.notifications.push(notification);
-    
             }
-    
         }
-    
+
         console.log("Notifications to be scheduled: ", this.notifications);
-    
+
         if(this.platform.is('cordova')){
-    
             // Cancel any existing notifications
             LocalNotifications.cancelAll().then(() => {
-    
                 // Schedule the new notifications
                 LocalNotifications.schedule(this.notifications);
-    
+
                 this.notifications = [];
-    
+
                 let alert = this.alertCtrl.create({
                     title: 'Notificação ativada',
                     buttons: ['Ok']
                 });
-    
+
                 alert.present();
-    
             });
-    
         }
     }
 
@@ -110,7 +97,5 @@ export class NotificationPage {
         });
 
         alert.present();
-
     }
-
 }
