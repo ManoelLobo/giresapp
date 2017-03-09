@@ -3,7 +3,7 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { HomePage } from '../pages/home/home';
-import { NotificationPage} from '../pages/notification/notification';
+import { NotificationPage } from '../pages/notification/notification';
 import { CreditsPage } from '../pages/credits/credits';
 
 @Component({
@@ -14,24 +14,24 @@ export class MyApp {
 
     rootPage = HomePage;
 
-    pages: Array<{title: string, component: any}>;
+    pages: Array<{ title: string, component: any }>;
 
     constructor(public platform: Platform) {
         this.initApp();
 
         this.pages = [
-            {title: "Home", component: HomePage},
-            {title: "Notificações", component: NotificationPage},
-            {title: "Créditos", component: CreditsPage}
+            { title: "Home", component: HomePage },
+            { title: "Notificações", component: NotificationPage },
+            { title: "Créditos", component: CreditsPage }
         ];
     }
 
     initApp() {
         this.platform.ready().then(() => {
-        // Okay, so the platform is ready and our plugins are available.
-        // Here you can do any higher level native things you might need.
-        StatusBar.styleDefault();
-        Splashscreen.hide();
+            // Okay, so the platform is ready and our plugins are available.
+            // Here you can do any higher level native things you might need.
+            StatusBar.styleDefault();
+            Splashscreen.hide();
         });
     }
 
