@@ -1,6 +1,6 @@
 {
   "name": "giresApp",
-  "app_id": "",
+  "app_id": "com.lobodev.giresapp.pryscilla",
   "v2": true,
   "typescript": true
 }

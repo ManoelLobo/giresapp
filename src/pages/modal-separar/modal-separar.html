@@ -1,7 +1,7 @@
 <ion-header>
     <ion-toolbar>
         <ion-title>
-            Por que separar os resíduos?
+            Por que separar os resíduos sólidos?
         </ion-title>
         <ion-buttons start>
             <button ion-button (click)="dismiss()">
@@ -13,30 +13,6 @@
 </ion-header>
 
 <ion-content padding>
-    <!--
-    <ion-card>
-        <ion-card-header>
-            O problema dos resíduos sólidos
-        </ion-card-header>
-        <ion-card-content>
-        No Brasil, são geradas mais de 78 milhões de toneladas de resíduos sólidos por ano. Desse total,
-        53% são enviados a aterros sanitários, e o restante é lançado de qualquer forma diretamente no
-        meio ambiente ou em lixões.
-        </ion-card-content>
-    </ion-card>
-
-    <ion-card>
-        
-        <ion-card-content>
-            A disposição incorreta dos resíduos sólidos acarreta muitos problemas: a poluição e todos as
-            complicações decorrentes, como a proliferação do mosquito transmissor de dengue, zika e chikungunya;
-            as enchentes devido ao entupimento de canais de drenagem; e a falta de recursos hídricos apropriados
-            ao abastecimento das cidades são alguns exemplos. Além disso, muitos recursos aproveitáveis são
-            desperdiçados e enterrados nos aterros sanitários.
-        </ion-card-content>
-        <img src="img/asset_aedes.png">
-    </ion-card>
-    -->
     <ion-slides pager>
         <ion-slide>
             <h1>O problema dos resíduos sólidos</h1>
@@ -46,10 +22,25 @@
 
         <ion-slide>
             <img src="img/asset_aedes.png">
-            <p text-justify>A disposição incorreta dos resíduos sólidos acarreta muitos problemas: a poluição e todos as complicações decorrentes,
-                como a proliferação do mosquito transmissor de dengue, zika e chikungunya; as enchentes devido ao entupimento
-                de canais de drenagem; e a falta de recursos hídricos apropriados ao abastecimento das cidades são alguns
-                exemplos. Além disso, muitos recursos aproveitáveis são desperdiçados e enterrados nos aterros sanitários.</p>
+            <p text-justify>A disposição incorreta dos resíduos sólidos acarreta muitos problemas, como a proliferação de criadouros do mosquito
+                transmissor de dengue, zika e chikungunya; as enchentes devido ao entupimento de canais de drenagem; e a
+                falta de recursos hídricos apropriados ao abastecimento das cidades são alguns exemplos. Além disso, muitos
+                recursos naturais aproveitáveis são desperdiçados e enterrados ou queimados.</p>
+        </ion-slide>
+
+        <ion-slide>
+            <p text-justify>No Edifício Pryscilla, são gerados cerca de 9,7 kg de resíduos sólidos por dia, ou seja, quase 2 kg por apartamento
+                a cada dia. Desse total:</p>
+            <!--
+            <ion-list>
+                <ion-item text-wrap>50% de resíduos recicláveis úmidos (orgânicos)</ion-item>
+                <ion-item text-wrap>13% de resíduos recicláveis secos</ion-item>
+                <ion-item text-wrap>37% de rejeito (lixo)</ion-item>
+            </ion-list>
+            -->
+            <img src="img/asset_gravimetria.png">
+            <p text-justify>Essa situação pode ser melhorada. Os moradores do Edifício Pryscilla podem contribuir para o ambiente saudável
+                separando os resíduos sólidos na fonte – os apartamentos.</p>
         </ion-slide>
 
         <ion-slide>
@@ -59,27 +50,70 @@
 
         <ion-slide>
             <h2>Coleta seletiva</h2>
-            <p>Implementação no condomínio de um sistema de coleta seletiva, partindo da separação dentro de cada residência.
+            <p>Implementação no condomínio de um sistema de coleta seletiva, partindo da separação dentro de cada apartamento
+                (residência).
             </p>
-            <h2>Destinação dos recicláveis secos</h2>
+            <img src="img/asset_cs.png">
+        </ion-slide>
+
+        <ion-slide>
+            <h2>Destinação dos resíduos sólidos recicláveis secos</h2>
             <p>
-                Previamente separados, os recicláveis secos podem ser coletados por catadores organizados em associações ou informais.
-            </p>
-            <h2>Preparação para processo de compostagem</h2>
-            <p>O material orgânico, proveniente das cozinhas e das plantas ornamentais do prédio, poderá, futuramente, ser tratado
-                e convertido em adubo, para ser utilizado pelos próprios moradores em suas plantas domésticas ou nas áreas
-                comuns do condomínio.
+                Previamente separados, os resíduos sólidos recicláveis secos podem ser destinados aos catadores de materiais recicláveis
+                organizados em associação ou cooperativa ou mesmo aos catadores de materiais recicláveis informais.
             </p>
         </ion-slide>
 
         <ion-slide>
-            <h2>Quais os benefícios de se adotar a gestão integrada dos resíduos sólidos?</h2>
-            <ion-list>
-                <ion-item text-wrap>Redução do desperdício de recursos naturais e possibilidade de retorno de matérias primas ao ciclo produtivo</ion-item>
-                <ion-item text-wrap>Maior vida útil dos aterros</ion-item>
-                <ion-item text-wrap>Minoração dos impactos ambientais negativos e consequentes efeitos nocivos os ser humano</ion-item>
-                <ion-item text-wrap>Valorização social através da geração de fonte de renda dos catadores de materiais recicláveis</ion-item>
-            </ion-list>
+            <h2>Destinação dos resíduos sólidos recicláveis úmidos</h2>
+            <p>
+                Os resíduos sólidos recicláveis úmidos podem ser reaproveitados como fonte de alimentação animal ou posteriormente tratados
+                através de tecnologia de compostagem e utilizados como adubo.
+            </p>
         </ion-slide>
+
+        <ion-slide>
+            <h2>Preparação para processo de compostagem</h2>
+            <p>O material orgânico, proveniente das cozinhas e das plantas ornamentais do condomínio, pode ser tratado por meio
+                da tecnologia de compostagem e convertido em adubo com características favoráveis ao desenvolvimento de plantas
+                ornamentais, horta, farmácia viva e uso em áreas verdes.
+            </p>
+        </ion-slide>
+
+        <ion-slide>
+            <h2>Destinação dos rejeitos</h2>
+            <p>Os rejeitos, porção dos resíduos sólidos gerados que não pode ser tratada ou reutilizada, são encaminhados
+                a aterro sanitário, onde devem ser descartados de forma adequada.</p>
+        </ion-slide>
+
+            <ion-slide>
+                <h2>Que benefícios poderão ser obtidos com a implantação da coleta seletiva?</h2>
+                <ion-list>
+                    <ion-item text-wrap>Redução do desperdício de recursos naturais.</ion-item>
+                    <ion-item text-wrap>Encaminhamento dos resíduos sólidos recicláveis secos selecionados aos catadores de materiais recicláveis,
+                        gerando renda para o sustento de suas famílias.</ion-item>
+                    <ion-item text-wrap>Diminuição dos riscos que estão submetidos os catadores de materiais recicláveis.</ion-item>
+                </ion-list>
+            </ion-slide>
+
+            <ion-slide>
+                <h2>Que benefícios poderão ser obtidos com a implantação da coleta seletiva?</h2>
+                <ion-list>
+                    <ion-item text-wrap>Retorno dos resíduos sólidos na forma de matéria-prima ao ciclo produtivo (indústria), diminuindo a pressão
+                        sobre os diferentes recursos naturais, dentre os quais água e energia.</ion-item>
+                    <ion-item text-wrap>Organização e limpeza do meio ambiente.</ion-item>
+                </ion-list>
+            </ion-slide>
+
+            <ion-slide>
+                <h2>Que benefícios poderão ser obtidos com a implantação da coleta seletiva?</h2>
+                <ion-list>
+                    <ion-item text-wrap>Diminuição do número de criadouros do mosquito <i>Aedes aegypti</i>.</ion-item>
+                    <ion-item text-wrap>Redução das possibilidades de poluição e contaminação ambiental.
+                    </ion-item>
+                    <ion-item text-wrap>Cuidado com o meio ambiente.</ion-item>
+                    <ion-item text-wrap>Expressão de atitude solidária, fraterna e sustentável.</ion-item>
+                </ion-list>
+            </ion-slide>
     </ion-slides>
 </ion-content>
